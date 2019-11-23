@@ -1,0 +1,37 @@
+.description h2 {
+  font-size: 24px;
+  font-weight: lighter;
+  text-align: center;
+  color: #283645;
+}
+
+.description__list {
+  background-color: #f2f2f2;
+}
+
+.description__item {
+  list-style: none;
+
+  h3 {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 24px;
+    color: #283645;
+  }
+}
+
+.description-friends {
+  &::after {
+    content: "";
+    display: block;
+    width: 157px;
+    height: 277px;
+
+    background-image: url("../img/iphone-screen-mobile@1x.png");
+    background-repeat: no-repeat;
+  }
+}
