@@ -61,16 +61,16 @@
       <h2 class="page-header__title">Конкурс на самое безбашенное путешествие с Пинк</h2>
     </header>
     <main class="main-form">
-      <article class="form__contest">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</article>
+      <article class="form__contest">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</article>
       <form class="form" method="post" action="https://echo.htmlacademy.ru">
-        <label for="surname">Фамилия:</label>
-        <input type="text" name="surname" id="surname" placeholder="Укажите фамилию *">
-        <label for="name">Имя:</label>
-        <input type="text" name="name" id="name" placeholder="Введите ваше имя *">
-        <label for="patronymic">Отчество:</label>
-        <input type="text" name="patronymic" id="patronymic" placeholder="Ну и отчество тоже">
+        <label class="form__label" for="surname">Фамилия:</label>
+        <input class="form__input" type="text" name="surname" id="surname" placeholder="Укажите фамилию *">
+        <label class="form__label" for="name">Имя:</label>
+        <input class="form__input" type="text" name="name" id="name" placeholder="Введите ваше имя *">
+        <label class="form__label" for="patronymic">Отчество:</label>
+        <input class="form__input" type="text" name="patronymic" id="patronymic" placeholder="Ну и отчество тоже">
         <ul class="form__achivements">
-          <p class="form__achivements-title">Ваши безбашенные достижения в путешествии</p>
+          <p class="form__achivements-title form__label">Ваши безбашенные достижения в путешествии</p>
           <li class="form__achivement">
             <input class="visually-hidden" name="form__achivement-1" type="checkbox" id="form__achivement-1" checked>
             <label class="form__achivement-label" for="form__achivement-1">Сделал селфи с акулой</label>
@@ -96,29 +96,29 @@
             <label class="form__achivement-label" for="form__achivement-6">Разгромил отель</label>
           </li>
         </ul>
-        <label for="tel">Номер телефона</label>
-        <input type="tel" name="tel" id="tel" placeholder="Номер, пожалуйста">
-        <label for="email">Aдрес почты</label>
-        <input type="email" name="email" id="email" placeholder="Введите почту *">
+        <label class="form__label" for="tel">Номер телефона</label>
+        <input class="form__input" type="tel" name="tel" id="tel" placeholder="Номер, пожалуйста">
+        <label class="form__label" for="email">Aдрес почты</label>
+        <input class="form__input" type="email" name="email" id="email" placeholder="Введите почту *">
         <ul class="form__apps">
-          <p class="form__app-title">С каким приложением путешествовали?</p>
+          <p class="form__app-title form__label">С каким приложением путешествовали?</p>
           <li class="form__app">
             <input class="visually-hidden" name="form__app" type="radio" id="form__app-1" checked>
             <label class="form__achivement-label" for="form__app-1">Pink для iOS</label>
           </li>
-          <li class="form__achivement">
+          <li class="form__app">
             <input class="visually-hidden" name="form__app" type="radio" id="form__app-2">
             <label class="form__achivement-label" for="form__app-2">Pink на Android</label>
           </li>
-          <li class="form__achivement">
+          <li class="form__app">
             <input class="visually-hidden" name="form__app" type="radio" id="form__app-3">
             <label class="form__achivement-label" for="form__app-3">Windows Phone</label>
           </li>
         </ul>
-        <p class="form__comment-title">Опишите свои эмоции</p>
-        <textarea class="form__comment" name="comment" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
-        <label class="form__submit"><input type="submit" value="Отправить форму"></label>
-        <p class="form__reminder">* — обязательные поля</p>
+        <p class="form__comment-title form__label">Опишите свои эмоции</p>
+        <textarea class="form__comment form__input" name="comment" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+        <label ><input class="form__submit" type="submit" value="Отправить форму"></label>
+        <p class="form__reminder"><span class="form__star">*</span> — обязательные поля</p>
       </form>
     </main>
     <footer class="inner-footer">
