@@ -1,5 +1,5 @@
 .main-gallery {
-  color: #283645;
+  color: @blue-color;
 }
 
 .gallery__title {
@@ -23,13 +23,12 @@
 }
 
 .gallery__author {
-  font-weight: bold;
-  font-size: 14px;
+  .bold();
   line-height: 24px;
 }
 
 .gallery__time {
-  font-weight: lighter;
+  .light();
   font-size: 12px;
   line-height: 24px;
   text-transform: uppercase;
@@ -46,7 +45,7 @@
   font-size: 12px;
   line-height: 24px;
   text-transform: uppercase;
-  color: #d22856;
+  color: @pink-color;
 }
 
 .gallery__heart {
