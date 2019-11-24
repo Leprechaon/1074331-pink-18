@@ -17,14 +17,13 @@
 .upload__bar {
   margin-bottom: 10px;
 
-  border-bottom: 1px solid rgba(#283645, 0.1);
+  border-bottom: 1px solid rgba(@blue-color, 0.1);
 }
 
 .upload__button {
   margin-bottom: 10px;
   font-size: 18px;
-  font-family: "Open Sans Bold", "Tahoma", "Arial", sans-serif;
-  font-weight: 700;
+  .bold();
 
   background-color: transparent;
   border: 3px solid;
@@ -32,9 +31,9 @@
 }
 
 .upload__button--submit {
-  color: #d22856;
+  color: @pink-color;
 }
 
 .upload__button--reset {
-  color: rgba(#283645, 0.1);
+  color: rgba(@blue-color, 0.1);
 }
