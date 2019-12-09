@@ -1,9 +1,42 @@
+.light() {
+  font-family: "Open Sans Light", "Tahoma", "Arial", sans-serif;
+  font-weight: 300;
+}
+
+.regular() {
+  font-family: "Open Sans", "Tahoma", "Arial", sans-serif;
+  font-weight: 400;
+}
+
 .bold() {
   font-family: "Open Sans Bold", "Tahoma", "Arial", sans-serif;
   font-weight: 700;
 }
 
-.light() {
-  font-family: "Open Sans Light", "Tahoma", "Arial", sans-serif;
-  font-weight: 300;
+.mobile() {
+  display: block;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.tablet() {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.desktop() {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+  }
 }
