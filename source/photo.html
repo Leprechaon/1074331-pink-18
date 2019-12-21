@@ -242,33 +242,49 @@
         <h3 class="upload__title">Затмите их всех!<br> Выкладывайте все, что накопилось в телефоне!</h3>
         <div class="upload__wrapper">
           <form class="upload__form" method="post" action="https://echo.htmlacademy.ru">
-            <img src="./img/photo-road-mobile@1x.jpg" width="280" height="auto" alt="mobile-photo">
-            <ul class="upload__effects">
-              <li class="upload__effect upload__effect--crop">
-                <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
-                  <path d="M34,30h4V14c0-2.21-1.79-4-4-4H18v4h16V30z M14,34V2h-4v8H2v4h8v20c0,2.21,1.79,4,4,4h20v8h4v-8h8v-4H14z"/>
-                </svg>
-              </li>
-              <li class="upload__effect upload__effect--fill">
-                <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
-                  <path fill="none" d="M0,0h48v48H0V0z"/>
-                  <path d="M33.12,17.88L15.24,0l-2.83,2.83l4.76,4.76L6.88,17.88c-1.17,1.17-1.17,3.07,0,4.24l11,11C18.46,33.71,19.23,34,20,34 s1.54-0.29,2.12-0.88l11-11C34.29,20.95,34.29,19.05,33.12,17.88z M10.41,20L20,10.42L29.59,20H10.41z M38,23c0,0-4,4.33-4,7 c0,2.21,1.79,4,4,4s4-1.79,4-4C42,27.33,38,23,38,23z"/>
-                  <rect y="40" width="48" height="3"/>
-                </svg>
-              </li>
-              <li class="upload__effect upload__effect--contrast">
-                <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="31.92px" height="31.92px" viewBox="-35.422 -7.96 31.92 31.92" enable-background="new -35.422 -7.96 31.92 31.92" xml:space="preserve">
-                  <path fill="#231F20" d="M-19.462-3.96c6.595,0,11.96,5.365,11.96,11.96s-5.365,11.96-11.96,11.96S-31.422,14.595-31.422,8 S-26.057-3.96-19.462-3.96 M-19.462-7.96c-8.814,0-15.96,7.145-15.96,15.96c0,8.813,7.146,15.96,15.96,15.96S-3.502,16.813-3.502,8 C-3.502-0.815-10.648-7.96-19.462-7.96L-19.462-7.96z"/>
-                  <path d="M-19.462,16.331c4.706,0,8.52-3.813,8.52-8.52c0-4.705-3.813-8.519-8.52-8.519"/>
-                </svg>
-              </li>
-            </ul>
-            <div class="upload__bar">
-              <div class="upload__scale"></div>
-              <div class="upload__slider"></div>
+            <img class="mobile" src="./img/photo-road-mobile@1x.jpg" width="280" height="auto" alt="mobile-photo">
+            <img class="tablet" src="./img/photo-road-tablet@1x.jpg" width="300" height="auto" alt="mobile-photo">
+            <img class="desktop" src="./img/photo-road-desktop@1x.jpg" width="300" height="auto" alt="mobile-photo">
+            <div class="upload__tools">
+              <div class="upload__effects">
+                <input class="upload__input--1 visually-hidden" type="radio" id="effect-1" name="effect-toggle">
+                <input class="upload__input--2 visually-hidden" type="radio" id="effect-2" name="effect-toggle" checked>
+                <input class="upload__input--3 visually-hidden" type="radio" id="effect-3" name="effect-toggle">
+                <label for="effect-1" class="upload__effect upload__effect--crop">
+                  <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
+                    <path fill="#283645" fill-opacity=".3" d="M34,30h4V14c0-2.21-1.79-4-4-4H18v4h16V30z M14,34V2h-4v8H2v4h8v20c0,2.21,1.79,4,4,4h20v8h4v-8h8v-4H14z"/>
+                  </svg>
+                  <div class="upload__bar upload__bar--crop">
+                    <div class="upload__scale"></div>
+                    <div class="upload__slider"></div>
+                  </div>
+                </label>
+                <label for="effect-2" class="upload__effect upload__effect--fill">
+                  <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
+                    <path fill="#283645" fill-opacity=".3" d="M33.12,17.88L15.24,0l-2.83,2.83l4.76,4.76L6.88,17.88c-1.17,1.17-1.17,3.07,0,4.24l11,11C18.46,33.71,19.23,34,20,34 s1.54-0.29,2.12-0.88l11-11C34.29,20.95,34.29,19.05,33.12,17.88z M10.41,20L20,10.42L29.59,20H10.41z M38,23c0,0-4,4.33-4,7 c0,2.21,1.79,4,4,4s4-1.79,4-4C42,27.33,38,23,38,23z"/>
+                    <rect fill="#283645" fill-opacity=".3" y="40" width="48" height="3"/>
+                  </svg>
+                  <div class="upload__bar upload__bar--fill">
+                    <div class="upload__scale"></div>
+                    <div class="upload__slider"></div>
+                  </div>
+                </label>
+                <label for="effect-3" class="upload__effect upload__effect--contrast">
+                  <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="31.92px" height="31.92px" viewBox="-35.422 -7.96 31.92 31.92" enable-background="new -35.422 -7.96 31.92 31.92" xml:space="preserve">
+                    <path fill="#283645" fill-opacity=".3" d="M-19.462-3.96c6.595,0,11.96,5.365,11.96,11.96s-5.365,11.96-11.96,11.96S-31.422,14.595-31.422,8 S-26.057-3.96-19.462-3.96 M-19.462-7.96c-8.814,0-15.96,7.145-15.96,15.96c0,8.813,7.146,15.96,15.96,15.96S-3.502,16.813-3.502,8 C-3.502-0.815-10.648-7.96-19.462-7.96L-19.462-7.96z"/>
+                    <path fill="#283645" fill-opacity=".3" d="M-19.462,16.331c4.706,0,8.52-3.813,8.52-8.52c0-4.705-3.813-8.519-8.52-8.519"/>
+                  </svg>
+                  <div class="upload__bar upload__bar--contrast">
+                    <div class="upload__scale"></div>
+                    <div class="upload__slider"></div>
+                  </div>
+                </label>
+              </div>
+              <div class="upload__button--wrapper">
+                <button class="upload__button upload__button--submit" type="submit">Запостить</button>
+                <button class="upload__button upload__button--reset" type="reset">Отмена</button>
+              </div>
             </div>
-            <button class="upload__button upload__button--submit" type="submit">Запостить</button>
-            <button class="upload__button upload__button--reset" type="reset">Отмена</button>
           </form>
         </div>
       </section>
@@ -324,6 +340,7 @@
         </svg>
         <ul class="footer__socials">
           <li class="footer__social">
+            <a href="#">
               <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.5px" height="14.663px" viewBox="0 0 17.5 14.663" enable-background="new 0 0 17.5 14.663" xml:space="preserve">
                 <g id="W6EeEF_1_">
                   <g>
@@ -331,16 +348,19 @@
                   </g>
                 </g>
               </svg>
-              <a>Twitter</a>
+              Twitter
+            </a>
           </li>
           <li class="footer__social">
-            <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="8.673px" height="18.944px" viewBox="0 0 8.673 18.944" enable-background="new 0 0 8.673 18.944" xml:space="preserve">
-              <path fill="#d22856" d="M6.275,3.357c0.799,0,1.599,0,2.398,0c0-1.119,0-2.238,0-3.357c-0.959,0-1.92,0-2.878,0C2.656,0.181,1.54,2.387,1.948,6.115 H0v3.517h1.958c0,3.104,0,6.208,0,9.312c1.279,0,2.558,0,3.837,0c0-3.104,0-6.208,0-9.312h2.857V6.115H5.786 C5.765,5.07,5.75,3.709,6.275,3.357z"/>
-            </svg>
-            <a>Facebook</a>
+            <a href="#">
+              <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="8.673px" height="18.944px" viewBox="0 0 8.673 18.944" enable-background="new 0 0 8.673 18.944" xml:space="preserve">
+                <path fill="#d22856" d="M6.275,3.357c0.799,0,1.599,0,2.398,0c0-1.119,0-2.238,0-3.357c-0.959,0-1.92,0-2.878,0C2.656,0.181,1.54,2.387,1.948,6.115 H0v3.517h1.958c0,3.104,0,6.208,0,9.312c1.279,0,2.558,0,3.837,0c0-3.104,0-6.208,0-9.312h2.857V6.115H5.786 C5.765,5.07,5.75,3.709,6.275,3.357z"/>
+              </svg>
+              Facebook
+            </a>
           </li>
           <li class="footer__social">
-            <a>
+            <a href="#">
               <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14.64px" height="13.96px" viewBox="0 0 14.64 13.96" enable-background="new 0 0 14.64 13.96" xml:space="preserve">
               <path fill="#d22856" d="M1.775,13.78C0.799,14.257,0,13.758,0,12.671V1.29c0-1.088,0.799-1.585,1.775-1.109l12.133,5.932 c0.975,0.478,0.975,1.258,0,1.736L1.775,13.78z"/>
               </svg>

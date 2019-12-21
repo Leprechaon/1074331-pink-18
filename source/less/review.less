@@ -1,11 +1,32 @@
 .review {
+  position: relative;
+  display: flex;
+  flex-direction: column;
   margin: 0 auto;
   margin-top: 25px;
   width: 280px;
+  min-height: 330px;
+}
+
+@media (min-width: @tablet-width) {
+  .review {
+    margin-top: 50px;
+    width: 660px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .review {
+    margin-top: 50px;
+    width: 940px;
+    background-image: url("../img/icon-quotes.svg");
+    background-repeat: no-repeat;
+    background-position: center 23px;
+  }
 }
 
 .review__slide {
-  display: flex;
+  display: none;
   flex-direction: column;
 }
 
@@ -18,10 +39,147 @@
   margin-bottom: 16px;
 }
 
+@media (min-width: @tablet-width) {
+  .review__title {
+    margin-top: 19px;
+    margin-bottom: 5px;
+    font-size: 20px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .review__title {
+    margin-top: 38px;
+    font-size: 24px;
+  }
+}
+
 .review__text {
   margin-top: 0;
   font-size: 14px;
   line-height: 30px;
   color: @blue-color;
   text-align: center;
+}
+
+@media (min-width: @tablet-width) {
+  .review__text {
+    order: -1;
+    margin-top: 76px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .review__text {
+    width: 700px;
+    margin: 0 auto;
+    margin-top: 136px;
+  }
+}
+
+.review__info {
+  text-align: center;
+  margin-top: 3px;
+}
+
+@media (min-width: @desktop-width) {
+  .review__info {
+    font-size: 18px;
+    margin-top: 1px;
+  }
+}
+
+.review__labels {
+  width: 75px;
+  margin: 0 auto;
+  margin-top: 18px;
+  display: flex;
+}
+
+@media (min-width: @tablet-width) {
+  .review__labels {
+    margin-top: 25px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .review__labels {
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+
+    border: 0;
+
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+}
+
+.review__label {
+  box-sizing: border-box;
+  margin: 0 auto;
+  width: 12px;
+  height: 12px;
+  border: 3px solid #ffffff;
+  background-color: #bec2c7;
+  border-radius: 50%;
+}
+
+.review__input--1:checked ~ .review__slides .review-1,
+.review__input--2:checked ~ .review__slides .review-2,
+.review__input--3:checked ~ .review__slides .review-3 {
+  display: flex;
+}
+
+.review__input--1:checked ~ .review__labels .review__label--1,
+.review__input--2:checked ~ .review__labels .review__label--2,
+.review__input--3:checked ~ .review__labels .review__label--3 {
+  border: 3px solid #283645;
+  background-color: #ffffff;
+}
+
+.review__label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 164px;
+  display: none;
+  width: 22px;
+  height: 41px;
+  background-image: url("../img/icon-review-arrow-left.svg");
+  background-repeat: no-repeat;
+  opacity: 0.3;
+}
+
+.review__label::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 164px;
+  display: none;
+  width: 22px;
+  height: 41px;
+  background-image: url("../img/icon-review-arrow-right.svg");
+  background-repeat: no-repeat;
+  opacity: 0.3;
+}
+
+@media (min-width: @desktop-width) {
+  .review__input--1:checked ~ .review__labels .review__label--3::before,
+  .review__input--1:checked ~ .review__labels .review__label--2::after {
+    display: block;
+  }
+
+  .review__input--2:checked ~ .review__labels .review__label--1::before,
+  .review__input--2:checked ~ .review__labels .review__label--3::after {
+    display: block;
+  }
+
+  .review__input--3:checked ~ .review__labels .review__label--2::before,
+  .review__input--3:checked ~ .review__labels .review__label--1::after {
+    display: block;
+  }
 }

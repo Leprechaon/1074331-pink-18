@@ -40,3 +40,25 @@
     display: block;
   }
 }
+
+.desktop-inline() {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: inline;
+  }
+}
+
+.not-mobile() {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+}
+
+.not-desktop() {
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
