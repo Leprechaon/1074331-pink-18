@@ -103,68 +103,102 @@
       </div>
     </header>
     <main class="main-form">
-      <article class="form__contest">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</article>
+      <article class="form__contest mobile">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</article>
+      <article class="form__contest not-mobile">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</article>
       <form class="form" method="post" action="https://echo.htmlacademy.ru">
-        <label class="form__label" for="surname">Фамилия:</label>
-        <input class="form__input" type="text" name="surname" id="surname" placeholder="Укажите фамилию *">
-        <label class="form__label" for="name">Имя:</label>
-        <input class="form__input" type="text" name="name" id="name" placeholder="Введите ваше имя *">
-        <label class="form__label" for="patronymic">Отчество:</label>
-        <input class="form__input" type="text" name="patronymic" id="patronymic" placeholder="Ну и отчество тоже">
-        <ul class="form__achivements">
-          <li>
-            <p class="form__achivements-title form__label">Ваши безбашенные достижения в путешествии</p>
-          </li>
-          <li class="form__achivement">
-            <input class="visually-hidden" name="form__achivement-1" type="checkbox" id="form__achivement-1" checked>
-            <label class="form__achivement-label" for="form__achivement-1">Сделал селфи с акулой</label>
-          </li>
-          <li class="form__achivement">
-            <input class="visually-hidden" name="form__achivement-2" type="checkbox" id="form__achivement-2" checked>
-            <label class="form__achivement-label" for="form__achivement-2">Обгорел на пляже</label>
-          </li>
-          <li class="form__achivement">
-            <input class="visually-hidden" name="form__achivement-3" type="checkbox" id="form__achivement-3">
-            <label class="form__achivement-label" for="form__achivement-3">Видел Чака Норриса</label>
-          </li>
-          <li class="form__achivement">
-            <input class="visually-hidden" name="form__achivement-4" type="checkbox" id="form__achivement-4">
-            <label class="form__achivement-label" for="form__achivement-4">Накупил сувениров</label>
-          </li>
-          <li class="form__achivement">
-            <input class="visually-hidden" name="form__achivement-5" type="checkbox" id="form__achivement-5" checked>
-            <label class="form__achivement-label" for="form__achivement-5">Удержал башню</label>
-          </li>
-          <li class="form__achivement">
-            <input class="visually-hidden" name="form__achivement-6" type="checkbox" id="form__achivement-6">
-            <label class="form__achivement-label" for="form__achivement-6">Разгромил отель</label>
-          </li>
-        </ul>
-        <label class="form__label" for="tel">Номер телефона</label>
-        <input class="form__input" type="tel" name="tel" id="tel" placeholder="Номер, пожалуйста">
-        <label class="form__label" for="email">Aдрес почты</label>
-        <input class="form__input" type="email" name="email" id="email" placeholder="Введите почту *">
-        <ul class="form__apps">
-          <li>
-            <p class="form__app-title form__label">С каким приложением путешествовали?</p>
-          </li>
-          <li class="form__app">
-            <input class="visually-hidden" name="form__app" type="radio" id="form__app-1" checked>
-            <label class="form__achivement-label" for="form__app-1">Pink для iOS</label>
-          </li>
-          <li class="form__app">
-            <input class="visually-hidden" name="form__app" type="radio" id="form__app-2">
-            <label class="form__achivement-label" for="form__app-2">Pink на Android</label>
-          </li>
-          <li class="form__app">
-            <input class="visually-hidden" name="form__app" type="radio" id="form__app-3">
-            <label class="form__achivement-label" for="form__app-3">Windows Phone</label>
-          </li>
-        </ul>
-        <p class="form__comment-title form__label">Опишите свои эмоции</p>
-        <textarea class="form__comment form__input" name="comment" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
-        <label ><input class="form__submit" type="submit" value="Отправить форму"></label>
-        <p class="form__reminder"><span class="form__star">*</span> — обязательные поля</p>
+        <fieldset class="form__fieldset form__fieldset--name">
+          <ul class="form__names">
+            <li class="form__li form__li--surname">
+              <label class="form__label form__label--surname" for="surname">Фамилия:</label>
+              <input class="form__input form__input--surname" type="text" name="surname" id="surname" placeholder="Укажите фамилию *">
+            </li>
+            <li class="form__li form__li--name">
+              <label class="form__label form__label--name" for="name">Имя:</label>
+              <input class="form__input form__input--name" type="text" name="name" id="name" placeholder="Введите ваше имя *">
+            </li>
+            <li class="form__li form__li--patronymic">
+              <label class="form__label form__label--patronymic" for="patronymic">Отчество:</label>
+              <input class="form__input form__input--patronymic" type="text" name="patronymic" id="patronymic" placeholder="Ну и отчество тоже">
+            </li>
+          </ul>
+        </fieldset>
+        <div class="form__fieldset--wrapper achivements-wrapper">
+          <fieldset class="form__fieldset form__fieldset--achivements">
+            <legend class="form__achivements-title form__legend">Ваши безбашенные достижения в путешествии</legend>
+            <ul class="form__achivements">
+              <div class="form__achivement--wrapper">
+                <li class="form__achivement">
+                  <input class="visually-hidden form__achivement--input" name="form__achivement-1" type="checkbox" id="form__achivement-1" checked>
+                  <label class="form__achivement--label" for="form__achivement-1">Сделал селфи с акулой</label>
+                </li>
+                <li class="form__achivement">
+                  <input class="visually-hidden form__achivement--input" name="form__achivement-2" type="checkbox" id="form__achivement-2" checked>
+                  <label class="form__achivement--label" for="form__achivement-2">Обгорел на пляже</label>
+                </li>
+              </div>
+              <div class="form__achivement--wrapper">
+                <li class="form__achivement">
+                  <input class="visually-hidden form__achivement--input" name="form__achivement-3" type="checkbox" id="form__achivement-3">
+                  <label class="form__achivement--label" for="form__achivement-3">Видел Чака Норриса</label>
+                </li>
+                <li class="form__achivement">
+                  <input class="visually-hidden form__achivement--input" name="form__achivement-4" type="checkbox" id="form__achivement-4">
+                  <label class="form__achivement--label" for="form__achivement-4">Накупил сувениров</label>
+                </li>
+              </div>
+              <div class="form__achivement--wrapper">
+                <li class="form__achivement">
+                  <input class="visually-hidden form__achivement--input" name="form__achivement-5" type="checkbox" id="form__achivement-5" checked>
+                  <label class="form__achivement--label" for="form__achivement-5">Удержал башню</label>
+                </li>
+                <li class="form__achivement">
+                  <input class="visually-hidden form__achivement--input" name="form__achivement-6" type="checkbox" id="form__achivement-6">
+                  <label class="form__achivement--label" for="form__achivement-6">Разгромил отель</label>
+                </li>
+              </div>
+            </ul>
+          </fieldset>
+        </div>
+        <fieldset class="form__fieldset form__fieldset--contacts">
+          <legend class="form__legend not-mobile">Контактная информация</legend>
+          <ul class="form__contacts">
+            <li class="form__contact">
+              <label class="form__label form__label--order form__label--tel" for="tel">Номер телефона</label>
+              <input class="form__input form__input--tel" type="tel" name="tel" id="tel" placeholder="Номер, пожалуйста">
+            </li>
+            <li class="form__contact">
+              <label class="form__label form__label--order form__label--email" for="email">Aдрес почты</label>
+              <input class="form__input form__input--email" type="email" name="email" id="email" placeholder="Введите почту *">
+            </li>
+          </ul>
+        </fieldset>
+        <div class="form__fieldset--wrapper app-wrapper">
+        <fieldset class="form__fieldset form__fieldset--app">
+            <legend class="form__app-title form__legend">С каким приложением путешествовали?</legend>
+            <ul class="form__apps">
+              <li class="form__app">
+                <input class="visually-hidden form__app--input" name="form__app" type="radio" id="form__app-1" checked>
+                <label class="form__app--label" for="form__app-1">Pink для iOS</label>
+              </li>
+              <li class="form__app">
+                <input class="visually-hidden form__app--input" name="form__app" type="radio" id="form__app-2">
+                <label class="form__app--label" for="form__app-2">Pink на Android</label>
+              </li>
+              <li class="form__app">
+                <input class="visually-hidden form__app--input" name="form__app" type="radio" id="form__app-3">
+                <label class="form__app--label" for="form__app-3">Windows Phone</label>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
+        <fieldset class="form__fieldset form__fieldset--comment">
+          <legend class="form__comment-title form__legend">Опишите свои эмоции</legend>
+          <textarea class="form__comment form__input" name="comment" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+        </fieldset>
+        <div class="form__submit--wrapper">
+          <button class="form__submit" type="submit">Отправить форму</button>
+          <p class="form__reminder"><span class="form__star">*</span> — обязательные <span class="desktop-inline">для заполнения</span> поля</p>
+        </div>
       </form>
     </main>
     <footer class="inner-footer">
@@ -218,6 +252,7 @@
         </svg>
         <ul class="footer__socials">
           <li class="footer__social">
+            <a href="#">
               <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.5px" height="14.663px" viewBox="0 0 17.5 14.663" enable-background="new 0 0 17.5 14.663" xml:space="preserve">
                 <g id="W6EeEF_1_">
                   <g>
@@ -225,16 +260,19 @@
                   </g>
                 </g>
               </svg>
-              <a>Twitter</a>
+              Twitter
+            </a>
           </li>
           <li class="footer__social">
-            <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="8.673px" height="18.944px" viewBox="0 0 8.673 18.944" enable-background="new 0 0 8.673 18.944" xml:space="preserve">
-              <path fill="#d22856" d="M6.275,3.357c0.799,0,1.599,0,2.398,0c0-1.119,0-2.238,0-3.357c-0.959,0-1.92,0-2.878,0C2.656,0.181,1.54,2.387,1.948,6.115 H0v3.517h1.958c0,3.104,0,6.208,0,9.312c1.279,0,2.558,0,3.837,0c0-3.104,0-6.208,0-9.312h2.857V6.115H5.786 C5.765,5.07,5.75,3.709,6.275,3.357z"/>
-            </svg>
-            <a>Facebook</a>
+            <a href="#">
+              <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="8.673px" height="18.944px" viewBox="0 0 8.673 18.944" enable-background="new 0 0 8.673 18.944" xml:space="preserve">
+                <path fill="#d22856" d="M6.275,3.357c0.799,0,1.599,0,2.398,0c0-1.119,0-2.238,0-3.357c-0.959,0-1.92,0-2.878,0C2.656,0.181,1.54,2.387,1.948,6.115 H0v3.517h1.958c0,3.104,0,6.208,0,9.312c1.279,0,2.558,0,3.837,0c0-3.104,0-6.208,0-9.312h2.857V6.115H5.786 C5.765,5.07,5.75,3.709,6.275,3.357z"/>
+              </svg>
+              Facebook
+            </a>
           </li>
           <li class="footer__social">
-            <a>
+            <a href="#">
               <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14.64px" height="13.96px" viewBox="0 0 14.64 13.96" enable-background="new 0 0 14.64 13.96" xml:space="preserve">
               <path fill="#d22856" d="M1.775,13.78C0.799,14.257,0,13.758,0,12.671V1.29c0-1.088,0.799-1.585,1.775-1.109l12.133,5.932 c0.975,0.478,0.975,1.258,0,1.736L1.775,13.78z"/>
               </svg>
