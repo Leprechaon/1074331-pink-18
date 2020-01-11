@@ -1,0 +1,33 @@
+.inner-footer__logo {
+  margin: 0 auto;
+  margin-top: 41px;
+  margin-bottom: 35px;
+
+  &:hover {
+    g path {
+      fill: @pink-color;
+    }
+  }
+
+  &:active {
+    opacity: 30%;
+
+    g path {
+      fill: @blue-color;
+    }
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .inner-footer__logo {
+    margin: 0;
+    margin-top: 34px;
+    margin-left: 10px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .inner-footer__logo {
+    margin-top: 53px;
+  }
+}

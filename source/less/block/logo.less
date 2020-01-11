@@ -1,0 +1,55 @@
+.page-header__logo-wrapper {
+  box-sizing: border-box;
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  min-height: 70px;
+  border-bottom: 1px solid black;
+  background-color: #283645;
+  padding-top: 22px;
+}
+
+@media (min-width: @tablet-width) {
+  .page-header__logo-wrapper {
+    width: 100%;
+    min-height: 110px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header__logo-wrapper {
+    width: auto;
+    border: none;
+    background-color: transparent;
+    margin-right: 41px;
+  }
+}
+
+.page-header__logo {
+  box-sizing: border-box;
+  display: block;
+  width: max-content;
+  margin-left: 20px;
+}
+
+@media (min-width: @tablet-width) {
+  .page-header__logo {
+    margin-top: 4px;
+    margin-left: 20px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header__logo {
+    width: max-content;
+    margin-left: 0;
+  }
+}
+
+.logo-pink:hover path {
+  fill: #d22f56;
+}
+
+.logo-pink:active path {
+  fill: rgba(#ffffff, 0.3);
+}
