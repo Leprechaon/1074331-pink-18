@@ -59,6 +59,7 @@
 .gallery__panorama-link {
   margin: 0 auto;
   width: 100%;
+  max-width: 320px;
   font-size: 0;
   position: relative;
 
@@ -84,6 +85,8 @@
 
 @media (min-width: @tablet-width) {
   .gallery__panorama-link {
+    max-width: 960px;
+
     &::after {
       top: 58px;
     }
