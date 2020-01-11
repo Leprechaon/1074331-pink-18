@@ -77,6 +77,18 @@
   padding-left: 4px;
 }
 
+.main-footer__link--active {
+  &:hover {
+    color: @blue-color;
+    text-decoration: underline;
+  }
+
+  &:active {
+    color: rgba(@blue-color, 0.3);
+    text-decoration: none;
+  }
+}
+
 @media (min-width: @tablet-width) {
   .main-footer__link {
     padding-left: 0;

@@ -1,0 +1,189 @@
+.page-header__download-links {
+  position: absolute;
+  margin: 0 auto;
+  bottom: -269px;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 270px;
+  width: 100%;
+  background-color: #1d2631;
+}
+
+@media (min-width: @tablet-width) {
+  .page-header__download-links {
+    position: static;
+    width: 320px;
+    min-height: 352px;
+    background: none;
+    margin-top: 31px;
+    margin-left: 10px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header__download-links {
+    margin-top: 50px;
+    min-height: 405px;
+    margin-left: 0;
+  }
+}
+
+.page-header__download {
+  box-sizing: border-box;
+  display: block;
+  min-width: 280px;
+  min-height: 55px;
+  margin: 0 auto;
+  margin-top: 28px;
+  margin-bottom: 18px;
+  padding-top: 10px;
+  .bold();
+  font-size: 18px;
+  color: #ffffff;
+  text-decoration: none;
+  text-align: center;
+
+  border: 3px solid #ffffff;
+  border-radius: 27px;
+
+
+  &:hover {
+    background-color: #ffffff;
+    color: @pink-color;
+  }
+
+  &:active {
+    color: rgba(@pink-color, 0.3);
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .page-header__download {
+    width: 300px;
+    margin-top: 1px;
+    margin-bottom: 30px;
+    margin-left: 9px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header__download {
+    margin-top: 3px;
+    margin-bottom: 52px;
+    margin-left: 0;
+    padding-top: 7px;
+    font-size: 21px;
+  }
+}
+
+.page-header__download-stores {
+  margin: 0 auto;
+  margin-top: 14px;
+  padding: 0;
+  display: flex;
+}
+
+@media (min-width: @tablet-width) {
+  .page-header__download-stores {
+    margin-left: 30px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header__download-stores {
+    margin-left: 40px;
+  }
+}
+
+.page-header__download-store {
+  list-style: none;
+}
+
+@media (min-width: @tablet-width) {
+  .app-store {
+    margin-top: 1px;
+    margin-left: 26px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .app-store {
+    margin-top: 0;
+    margin-left: 8px;
+  }
+}
+
+.play-store {
+  margin-top: 8px;
+  margin-left: 35px;
+}
+
+@media (min-width: @tablet-width) {
+  .play-store {
+    margin-left: 37px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .play-store {
+    margin-left: 34px;
+  }
+}
+
+.windows-store {
+  margin-top: 12px;
+  margin-left: 38px;
+}
+
+@media (min-width: @tablet-width) {
+  .windows-store {
+    margin-top: 14px;
+    margin-left: 36px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .windows-store {
+    margin-top: 11px;
+    margin-left: 38px;
+  }
+}
+
+.store-link {
+  font-size: 0;
+}
+
+.page-header__app-store {
+  background-image: url("../img/logo-apple.svg");
+}
+
+.page-header__download-links p {
+  margin: 0 auto;
+  margin-top: 16px;
+  padding-left: 2px;
+  .light();
+  line-height: 24px;
+  width: 250px;
+  text-align: center;
+  color: #ffffff;
+}
+
+@media (min-width: @tablet-width) {
+  .page-header__download-links p {
+    margin-top: 31px;
+    font-size: 18px;
+    width: 300px;
+    margin-left: 7px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header__download-links p {
+    margin-top: 50px;
+    padding-left: 0;
+    font-size: 18px;
+    width: 300px;
+    margin-left: 0;
+  }
+}

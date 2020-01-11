@@ -57,6 +57,14 @@
   }
 }
 
+.not-mobile-inline() {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: inline;
+  }
+}
+
 .not-desktop() {
   @media (min-width: @desktop-width) {
     display: none;
