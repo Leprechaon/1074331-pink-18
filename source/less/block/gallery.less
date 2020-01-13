@@ -36,16 +36,24 @@
   display: flex;
   width: 100%;
   min-height: 137px;
-  background-image: url("..//img/panorama-desktop@1x.jpg");
+  background-image: url("..//img/panorama-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: top center;
-  background-size: auto 100%;
+  background-size: cover;
+
+  @media (min-resolution: @retina-dppx) {
+    background-image: url("..//img/panorama-mobile@2x.jpg");
+  }
 }
 
 @media (min-width: @tablet-width) {
   .gallery__panorama-of-day {
     min-height: 509px;
-    background-image: url("..//img/panorama-desktop@1x.jpg");
+    background-image: url("..//img/panorama-tablet@1x.jpg");
+
+    @media (min-resolution: @retina-dppx) {
+      background-image: url("..//img/panorama-tablet@2x.jpg");
+    }
   }
 }
 
@@ -53,6 +61,10 @@
   .gallery__panorama-of-day {
     min-height: 506px;
     background-image: url("..//img/panorama-desktop@1x.jpg");
+
+    @media (min-resolution: @retina-dppx) {
+      background-image: url("..//img/panorama-desktop@2x.jpg");
+    }
   }
 }
 

@@ -169,7 +169,12 @@
   background-image: url("../img/icon-map-marker.svg"), url("../img/bg-triangle-white-footer.svg"), url("../img/bg-map-mobile@1x.png");
   background-repeat: no-repeat;
   background-position: center 124px, center -1px, center bottom;
-  background-size: auto, 100%;
+  background-size: auto, 100%, auto;
+
+  @media (min-resolution: @retina-dppx) {
+    background-image: url("../img/icon-map-marker.svg"), url("../img/bg-triangle-white-footer.svg"), url("../img/bg-map-mobile@2x.jpg");
+    background-size: auto, 100%, 320px auto;
+  }
 }
 
 
@@ -181,6 +186,11 @@
     background-image: url("../img/icon-map-marker.svg"), url("../img/bg-triangle-white-footer.svg"), url("../img/bg-map-tablet@1x.jpg");
     background-repeat: no-repeat;
     background-position: center 193px, center -1px, center -348px;
+
+    @media (min-resolution: @retina-dppx) {
+      background-image: url("../img/icon-map-marker.svg"), url("../img/bg-triangle-white-footer.svg"), url("../img/bg-map-tablet@2x.jpg");
+      background-size: auto, 100%, 700px auto;
+    }
   }
 }
 
@@ -193,6 +203,11 @@
     background-repeat: no-repeat;
     background-position: center 264px, center -1px, center -277px;
     margin-bottom: 15px;
+
+    @media (min-resolution: @retina-dppx) {
+      background-image: url("../img/icon-map-marker.svg"), url("../img/bg-triangle-white-footer.svg"), url("../img/bg-map-desktop@2x.jpg");
+      background-size: auto, 100%, 1200px auto;
+    }
   }
 }
 
