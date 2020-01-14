@@ -36,15 +36,19 @@
   left: 197px;
   font-size: 0;
 
+  svg {
+    fill: @pink-color;
+  }
+
   &:hover {
-    path {
+    svg {
       fill: @blue-color;
     }
   }
 
   &:active {
-    path {
-      fill: rgba(@blue-color, 0.3);
+    svg {
+      fill-opacity: 0.3;
     }
   }
 }
