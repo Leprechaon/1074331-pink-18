@@ -120,16 +120,16 @@
 .upload__effect {
   list-style: none;
   margin-bottom: 70px;
+
+  svg {
+    fill-opacity: 0.3;
+  }
 }
 
 @media (max-width: @mobile-width) {
   .upload__effect {
     &:hover {
-      path {
-        fill-opacity: 0.5;
-      }
-
-      rect {
+      svg {
         fill-opacity: 0.5;
       }
     }
@@ -140,6 +140,11 @@
   .upload__effect {
     margin-top: 8px;
     margin-bottom: 37px;
+
+    svg {
+      fill: @pink-color;
+      fill-opacity: 1;
+    }
   }
 }
 
@@ -161,11 +166,6 @@
     svg {
       width: 24px;
       height: 24px;
-
-      path {
-        fill-opacity: 1;
-        fill: @pink-color;
-      }
     }
   }
 }
@@ -192,16 +192,6 @@
     svg {
       width: 24px;
       height: 24px;
-
-      path {
-        fill-opacity: 1;
-        fill: @pink-color;
-      }
-
-      rect {
-        fill-opacity: 1;
-        fill: @pink-color;
-      }
     }
   }
 }
@@ -229,11 +219,6 @@
     svg {
       width: 16px;
       height: 16px;
-
-      path {
-        fill-opacity: 1;
-        fill: @pink-color;
-      }
     }
   }
 }
@@ -267,12 +252,7 @@
   .upload__input--1:checked ~ .upload__effect--crop,
   .upload__input--2:checked ~ .upload__effect--fill,
   .upload__input--3:checked ~ .upload__effect--contrast {
-    path {
-      fill: @pink-color;
-      fill-opacity: 1;
-    }
-
-    rect {
+    svg {
       fill: @pink-color;
       fill-opacity: 1;
     }

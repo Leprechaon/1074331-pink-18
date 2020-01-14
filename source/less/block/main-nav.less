@@ -11,7 +11,7 @@
   }
 }
 
-.main-nav__toggle {
+.main-nav__toggles {
   position: absolute;
   top: 0;
   right: -20px;
@@ -19,21 +19,23 @@
   background-color: transparent;
   border: none;
 
-  &:hover {
-    path {
-      fill: @pink-color;
-    }
+  svg {
+    fill: #ffffff;
+  }
+
+  &:hover svg {
+    fill: @pink-color;
   }
 
   &:active {
-    path {
-      fill: rgba(@pink-color, 0.3);
-    }
+    fill: #ffffff;
+    fill-opacity: 0.3;
   }
 }
 
+
 @media (min-width: @desktop-width) {
-  .main-nav__toggle {
+  .main-nav__toggles {
     display: none;
   }
 }

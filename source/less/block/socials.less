@@ -35,6 +35,10 @@
   border: 3px solid rgba(@blue-color, 0.1);
   border-radius: 50%;
 
+  svg {
+    fill: @pink-color;
+  }
+
   &:hover {
     border-color: rgba(@blue-color, 1);
   }
@@ -42,8 +46,8 @@
   &:active {
     border-color: rgba(@blue-color, 0.1);
 
-    path {
-      fill: rgba(@pink-color, 0.3);
+    svg {
+      fill-opacity: 0.3;
     }
   }
 }
