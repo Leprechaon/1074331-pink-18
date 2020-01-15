@@ -32,49 +32,15 @@
   }
 }
 
-.gallery__panorama-of-day {
-  display: flex;
-  width: 100%;
-  min-height: 137px;
-  background-image: url("..//img/panorama-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: cover;
-
-  @media (min-resolution: @retina-dppx) {
-    background-image: url("..//img/panorama-mobile@2x.jpg");
-  }
-}
-
-@media (min-width: @tablet-width) {
-  .gallery__panorama-of-day {
-    min-height: 509px;
-    background-image: url("..//img/panorama-tablet@1x.jpg");
-
-    @media (min-resolution: @retina-dppx) {
-      background-image: url("..//img/panorama-tablet@2x.jpg");
-    }
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .gallery__panorama-of-day {
-    min-height: 506px;
-    background-image: url("..//img/panorama-desktop@1x.jpg");
-
-    @media (min-resolution: @retina-dppx) {
-      background-image: url("..//img/panorama-desktop@2x.jpg");
-    }
-  }
-}
-
-.gallery__panorama-link {
-  margin: 0 auto;
-  width: 100%;
-  max-width: 320px;
-  font-size: 0;
+.gallery__link--panorama {
   position: relative;
-  text-decoration: none;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1px;
+  padding-bottom: 0;
+  font-size: 0;
 
   &::after {
     position: absolute;
@@ -98,8 +64,8 @@
 }
 
 @media (min-width: @tablet-width) {
-  .gallery__panorama-link {
-    max-width: 960px;
+  .gallery__link--panorama {
+    width: 640px;
 
     &::after {
       top: 58px;
@@ -108,12 +74,19 @@
 }
 
 @media (min-width: @desktop-width) {
-  .gallery__panorama-link {
+  .gallery__link--panorama {
+    width: 940px;
+
     &::after {
       top: 54px;
       right: 10px;
     }
   }
+}
+
+.gallery__img--panorama {
+  max-width: none;
+  position: relative;
 }
 
 .gallery__info--panorama {
