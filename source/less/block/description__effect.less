@@ -1,0 +1,131 @@
+.description__effect-wrapper {
+  position: relative;
+}
+
+@media (min-width: @desktop-width) {
+  .description__effect-wrapper {
+    background-color: #f2f2f2;
+    width: 100%;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .description__effect {
+    position: relative;
+    width: 660px;
+    margin: 0 auto;
+
+    h3 {
+      font-size: 30px;
+      .bold();
+      line-height: 36px;
+      margin-top: 87px;
+      margin-left: 330px;
+      margin-bottom: 5px;
+    }
+
+    p {
+      width: 300px;
+      margin-left: 330px;
+      margin-top: 10px;
+      margin-bottom: 12px;
+      line-height: 24px;
+    }
+
+    a {
+      margin-left: 330px;
+      color: #d22856;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      box-sizing: border-box;
+      left: 21px;
+      top: -37px;
+      width: 238px;
+      height: 276px;
+
+      background-image: url("../img/icon-timer.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+
+    &::after {
+      content: "24";
+      position: absolute;
+      box-sizing: border-box;
+      left: 39px;
+      top: 18px;
+      .bold();
+      font-size: 96px;
+      color: #d22856;
+      display: block;
+      width: 203px;
+      height: 203px;
+      padding-top: 10px;
+      padding-left: 31px;
+      border: 14px solid #d22856;
+      border-radius: 50%;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .description__effect {
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+    min-height: 320px;
+
+    h3 {
+      font-size: 30px;
+      .bold();
+      line-height: 36px;
+      margin-top: 144px;
+      margin-left: 366px;
+      margin-bottom: 5px;
+    }
+
+    p {
+      width: 530px;
+      margin-left: 366px;
+      margin-top: 21px;
+      margin-bottom: 33px;
+      line-height: 30px;
+      font-size: 18px;
+    }
+
+    a {
+      margin-left: 366px;
+      color: #d22856;
+      font-size: 18px;
+    }
+
+    &::before {
+      left: 1px;
+      top: -91px;
+      width: 298px;
+      height: 345px;
+
+      background-image: url("../img/icon-timer.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+
+    &::after {
+      left: 23px;
+      top: -21px;
+      .bold();
+      font-size: 120px;
+      color: #d22856;
+      display: block;
+      width: 253px;
+      height: 253px;
+      padding-top: 12px;
+      padding-left: 40px;
+      border: 17px solid #d22856;
+      border-radius: 50%;
+    }
+  }
+}
