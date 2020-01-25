@@ -10,7 +10,7 @@
   line-height: 30px;
   text-align: center;
   width: 280px;
-  margin-top: 22px;
+  margin-top: 20px;
 }
 
 
@@ -99,7 +99,7 @@
   position: relative;
   display: flex;
   flex-wrap: wrap;
-  margin-top: 39px;
+  margin-top: 36px;
   padding: 0;
   align-items: center;
 }
@@ -108,6 +108,7 @@
   .upload__effects {
     flex-direction: column;
     align-items: flex-start;
+    margin-top: 38px;
   }
 }
 
@@ -258,9 +259,9 @@
     }
   }
 
-  .upload__input--1:checked ~ .upload__effect--crop .upload__bar,
-  .upload__input--2:checked ~ .upload__effect--fill .upload__bar,
-  .upload__input--3:checked ~ .upload__effect--contrast .upload__bar {
+  .upload__input--1:checked ~ .upload__effect--crop + .upload__bar,
+  .upload__input--2:checked ~ .upload__effect--fill + .upload__bar,
+  .upload__input--3:checked ~ .upload__effect--contrast + .upload__bar {
     display: flex;
   }
 }
@@ -376,13 +377,13 @@
   }
 }
 
-.upload__button--wrapper {
+.upload__buttons {
   display: flex;
   flex-direction: column;
 }
 
 @media (min-width: @desktop-width) {
-  .upload__button--wrapper {
+  .upload__buttons {
     flex-direction: row;
     margin-top: 140px;
     margin-bottom: 10px;

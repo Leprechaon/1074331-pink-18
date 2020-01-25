@@ -1,41 +1,19 @@
-.description__effect-wrapper {
+.effect {
   position: relative;
 }
 
 @media (min-width: @desktop-width) {
-  .description__effect-wrapper {
+  .effect {
     background-color: #f2f2f2;
     width: 100%;
   }
 }
 
 @media (min-width: @tablet-width) {
-  .description__effect {
+  .effect__wrapper {
     position: relative;
     width: 660px;
     margin: 0 auto;
-
-    h3 {
-      font-size: 30px;
-      .bold();
-      line-height: 36px;
-      margin-top: 87px;
-      margin-left: 330px;
-      margin-bottom: 5px;
-    }
-
-    p {
-      width: 300px;
-      margin-left: 330px;
-      margin-top: 10px;
-      margin-bottom: 12px;
-      line-height: 24px;
-    }
-
-    a {
-      margin-left: 330px;
-      color: #d22856;
-    }
 
     &::before {
       content: "";
@@ -72,35 +50,11 @@
 }
 
 @media (min-width: @desktop-width) {
-  .description__effect {
+  .effect__wrapper {
     position: relative;
     width: 940px;
     margin: 0 auto;
     min-height: 320px;
-
-    h3 {
-      font-size: 30px;
-      .bold();
-      line-height: 36px;
-      margin-top: 144px;
-      margin-left: 366px;
-      margin-bottom: 5px;
-    }
-
-    p {
-      width: 530px;
-      margin-left: 366px;
-      margin-top: 21px;
-      margin-bottom: 33px;
-      line-height: 30px;
-      font-size: 18px;
-    }
-
-    a {
-      margin-left: 366px;
-      color: #d22856;
-      font-size: 18px;
-    }
 
     &::before {
       left: 1px;
@@ -127,5 +81,47 @@
       border: 17px solid #d22856;
       border-radius: 50%;
     }
+  }
+}
+
+.effect__title {
+  font-size: 30px;
+  .bold();
+  line-height: 36px;
+  margin-top: 95px;
+  margin-left: 330px;
+  margin-bottom: 5px;
+
+  @media (min-width: @desktop-width) {
+    margin-top: 144px;
+    margin-left: 366px;
+    margin-bottom: 5px;
+  }
+}
+
+.effect__paragraph {
+  width: 300px;
+  margin-left: 330px;
+  margin-top: 10px;
+  margin-bottom: 12px;
+  line-height: 24px;
+
+  @media (min-width: @desktop-width) {
+    width: 530px;
+    margin-left: 366px;
+    margin-top: 21px;
+    margin-bottom: 33px;
+    line-height: 30px;
+    font-size: 18px;
+  }
+}
+
+.effect__link {
+  margin-left: 330px;
+  color: #d22856;
+
+  @media (min-width: @desktop-width) {
+    margin-left: 366px;
+    font-size: 18px;
   }
 }

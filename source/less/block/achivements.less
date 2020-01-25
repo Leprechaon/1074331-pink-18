@@ -1,0 +1,118 @@
+.achivements__fieldset {
+  margin-top: 38px;
+}
+
+.achivements__form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 38px;
+  margin-bottom: -10px;
+}
+
+@media (min-width: @tablet-width) {
+  .achivements__form {
+    margin-top: 43px;
+    margin-bottom: -7px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .achivements__form {
+    flex-direction: row;
+    margin-bottom: 0;
+    padding: 0;
+  }
+}
+
+.achivements__items {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: @desktop-width) {
+  .achivements__items {
+    margin-left: 40px;
+    margin-right: 8px;
+  }
+}
+
+.achivements__item {
+  list-style: none;
+  margin-bottom: 52px;
+}
+
+.achivements__label {
+  position: relative;
+  margin-left: 58px;
+  font-size: 18px;
+  line-height: 30px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    box-sizing: border-box;
+    display: block;
+    width: 39px;
+    height: 39px;
+    left: -69px;
+    top: -7px;
+    background-color: #ffffff;
+    border: 2px solid #e5e5e5;
+  }
+
+  &:hover {
+    &::before {
+      border-color: @blue-color;
+    }
+  }
+
+  &:active {
+    &::before {
+      border-color: @pink-color;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    box-sizing: border-box;
+    display: none;
+    width: 10px;
+    height: 22px;
+    left: -54px;
+    top: -1px;
+    background-color: #ffffff;
+    border: 2px solid @pink-color;
+    border-left: none;
+    border-top: none;
+    transform: rotate(45deg);
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .achivements__label {
+    margin-left: 107px;
+
+    &::before {
+      left: -60px;
+    }
+
+    &::after {
+      left: -45px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .achivements__label {
+    margin-left: 67px;
+  }
+}
+
+.achivements__input:checked + .achivements__label::after {
+  display: block;
+}
+
+.achivements__input:focus + .achivements__label::before {
+  border-color: @pink-color;
+}

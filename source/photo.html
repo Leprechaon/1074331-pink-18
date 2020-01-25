@@ -4,70 +4,73 @@
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="preload" href="/fonts/opensans.woff2" as="font">
+    <link rel="preload" href="/fonts/opensansbold.woff2" as="font">
+    <link rel="preload" href="/fonts/opensanslight.woff2" as="font">
     <link href="css/style.min.css" rel="stylesheet">
   </head>
-  <body class="body-pink">
-    <header class="page-header">
+  <body class="pink">
+    <header class="pink__header">
       <nav class="main-nav main-nav--nojs">
-        <div class="page-header__logo-wrapper">
-        <a class="page-header__logo">
-          <svg class="logo-pink mobile" width="74.426" height="22.859">
+        <div class="logo-header">
+        <a href="index.html" class="logo-header__link">
+          <svg class="logo-header__svg mobile" width="74" height="23">
             <use xlink:href="./img/sprite.svg#logo-pink-white-mobile"></use>
           </svg>
-          <svg class="logo-pink tablet" width="146.3" height="40.375">
+          <svg class="logo-header__svg tablet" width="146" height="40">
             <use xlink:href="./img/sprite.svg#logo-pink-white-tablet"></use>
           </svg>
-          <svg class="logo-pink desktop" width="146.3" height="40.375">
+          <svg class="logo-header__svg desktop" width="146" height="40">
             <use xlink:href="./img/sprite.svg#logo-pink-white-desktop"></use>
           </svg>
         </a>
       </div>
       <button class="main-nav__toggles" type="button">
-        <svg class="main-nav__burger" width="49.945" height="24.007">
+        <svg class="main-nav__burger" width="50" height="24">
           <use xlink:href="./img/sprite.svg#icon-menu-burger"></use>
         </svg>
-        <svg class="main-nav__cross" width="23.867" height="23.867">
+        <svg class="main-nav__cross" width="24" height="24">
           <use xlink:href="./img/sprite.svg#icon-menu-cross"></use>
         </svg>
         Открыть меню
       </button>
-        <ul class="main-nav__list site-list">
-            <li class="site-list__item ">
+        <ul class="main-nav__items">
+            <li class="main-nav__item ">
               <a href="index.html">Главная</a>
             </li>
-            <li class="site-list__item site-list__item--active">
+            <li class="main-nav__item main-nav__item--active">
               <a href="#">Фотографии</a>
             </li>
-            <li class="site-list__item ">
+            <li class="main-nav__item ">
               <a href="form.html">Конкурс</a>
             </li>
-            <li class="site-list__item">
-              <a href="https://htmlacademy.ru">HTML Academy</a>
+            <li class="main-nav__item">
+              <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
             </li>
           </ul>
       </nav>
-      <div class="page-header__content--inner">
+      <div class="content">
         <h1 class="visually-hidden">Самое розовое приложение Pink</h1>
-        <h2 class="page-header__title--inner">Фотографии<br>пользователей</h2>
+        <h2 class="content__title">Фотографии<br>пользователей</h2>
       </div>
     </header>
-    <main class="main-gallery">
+    <main class="pink__gallery gallery">
       <h2 class="gallery__title">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</h2>
-      <a class="gallery__link--panorama" href="#">
+      <a class="gallery__link" href="#">
         <picture>
           <source type="image/webp" media="(min-width: 960px)" srcset="./img/panorama-desktop@1x.webp 1x, ./img/panorama-desktop@2x.webp 2x">
           <source type="image/webp" media="(min-width: 660px)" srcset="./img/panorama-tablet@1x.webp 1x, ./img/panorama-tablet@2x.webp 2x">
           <source type="image/webp" srcset="./img/panorama-mobile@1x.webp 1x, ./img/panorama-mobile@2x.webp 2x">
           <source media="(min-width: 960px)" srcset="./img/panorama-desktop@1x.jpg 1x, ./img/panorama-desktop@2x.jpg 2x">
           <source media="(min-width: 660px)" srcset="./img/panorama-tablet@1x.jpg 1x, ./img/panorama-tablet@2x.jpg 2x">
-          <img class="gallery__img--panorama" src="./img/panorama-mobile@1x.jpg" srcset="./img/panorama-mobile@2x.jpg 2x" alt="photo">
+          <img class="gallery__img" src="./img/panorama-mobile@1x.jpg" srcset="./img/panorama-mobile@2x.jpg 2x" alt="photo">
         </picture>
       </a>
-      <article class="gallery__info--panorama">
-        <h4 class="gallery__author">Анна <span class="gallery__time">(5 минут назад)</span></h4>
-        <p class="gallery__text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-        <p class="gallery__like--panorama">
-          <svg class="gallery__heart--panorama" width="12.545px" height="11.99px">
+      <article class="gallery__info gallery__info--panorama">
+        <h4 class="gallery__author gallery__author--panorama">Анна <span class="gallery__time">(5 минут назад)</span></h4>
+        <p class="gallery__text gallery__text--panorama">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+        <p class="gallery__like gallery__like--panorama">
+          <svg class="gallery__heart gallery__heart--panorama" width="13" height="12">
             <use xlink:href="./img/sprite.svg#icon-heart"></use>
           </svg>
           <span class="gallery__counter">
@@ -83,14 +86,14 @@
               <source type="image/webp" srcset="./img/photo-car-mobile@1x.webp 1x, ./img/photo-car-mobile@2x.webp 2x">
               <source media="(min-width: 960px)" srcset="./img/photo-car-desktop@1x.jpg 1x, ./img/photo-car-desktop@2x.jpg 2x">
               <source media="(min-width: 660px)" srcset="./img/photo-car-tablet@1x.jpg 1x, ./img/photo-car-tablet@2x.jpg 2x">
-              <img class="" src="./img/photo-car-mobile@1x.jpg" srcset="./img/photo-car-mobile@2x.jpg 2x" sizes="(min-width: 660px) 300 : 280" height="auto" alt="photo">
+              <img class="" src="./img/photo-car-mobile@1x.jpg" srcset="./img/photo-car-mobile@2x.jpg 2x" alt="photo">
             </picture>
           </a>
           <article class="gallery__info">
             <h4 class="gallery__author">Левон <span class="gallery__time">(5 часов назад)</span></h4>
             <p class="gallery__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
             <p class="gallery__like">
-              <svg class="gallery__heart" width="12.545px" height="11.99px">
+              <svg class="gallery__heart" width="13" height="12">
                 <use xlink:href="./img/sprite.svg#icon-heart"></use>
               </svg>
               <span class="gallery__counter">Нравится: 356</span>
@@ -105,14 +108,14 @@
               <source type="image/webp" srcset="./img/photo-drumset-mobile@1x.webp 1x, ./img/photo-drumset-mobile@2x.webp 2x">
               <source media="(min-width: 960px)" srcset="./img/photo-drumset-desktop@1x.jpg 1x, ./img/photo-drumset-desktop@2x.jpg 2x">
               <source media="(min-width: 660px)" srcset="./img/photo-drumset-tablet@1x.jpg 1x, ./img/photo-drumset-tablet@2x.jpg 2x">
-              <img class="" src="./img/photo-drumset-mobile@1x.jpg" srcset="./img/photo-drumset-mobile@2x.jpg 2x" sizes="(min-width: 660px) 300 : 280" height="auto" alt="photo">
+              <img class="" src="./img/photo-drumset-mobile@1x.jpg" srcset="./img/photo-drumset-mobile@2x.jpg 2x" alt="photo">
             </picture>
           </a>
           <article class="gallery__info">
             <h4 class="gallery__author">Антон <span class="gallery__time">(12 часов назад)</span></h4>
             <p class="gallery__text">Соседи будут рады!</p>
             <p class="gallery__like">
-              <svg class="gallery__heart" width="12.545px" height="11.99px">
+              <svg class="gallery__heart" width="13" height="12">
                 <use xlink:href="./img/sprite.svg#icon-heart"></use>
               </svg>
               <span class="gallery__counter">Нравится: 666</span>
@@ -127,14 +130,14 @@
               <source type="image/webp" srcset="./img/photo-window-mobile@1x.webp 1x, ./img/photo-window-mobile@2x.webp 2x">
               <source media="(min-width: 960px)" srcset="./img/photo-window-desktop@1x.jpg 1x, ./img/photo-window-desktop@2x.jpg 2x">
               <source media="(min-width: 660px)" srcset="./img/photo-window-tablet@1x.jpg 1x, ./img/photo-window-tablet@2x.jpg 2x">
-              <img class="" src="./img/photo-window-mobile@1x.jpg" srcset="./img/photo-window-mobile@2x.jpg 2x" sizes="(min-width: 660px) 300 : 280" height="auto" alt="photo">
+              <img class="" src="./img/photo-window-mobile@1x.jpg" srcset="./img/photo-window-mobile@2x.jpg 2x" alt="photo">
             </picture>
           </a>
           <article class="gallery__info">
             <h4 class="gallery__author">Борис <span class="gallery__time">(20 часов назад)</span></h4>
             <p class="gallery__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
             <p class="gallery__like">
-              <svg class="gallery__heart" width="12.545px" height="11.99px">
+              <svg class="gallery__heart" width="13" height="12">
                 <use xlink:href="./img/sprite.svg#icon-heart"></use>
               </svg>
               <span class="gallery__counter">Нравится: 215</span>
@@ -149,14 +152,14 @@
               <source type="image/webp" srcset="./img/photo-fair-mobile@1x.webp 1x, ./img/photo-fair-mobile@2x.webp 2x">
               <source media="(min-width: 960px)" srcset="./img/photo-fair-desktop@1x.jpg 1x, ./img/photo-fair-desktop@2x.jpg 2x">
               <source media="(min-width: 660px)" srcset="./img/photo-fair-tablet@1x.jpg 1x, ./img/photo-fair-tablet@2x.jpg 2x">
-              <img class="" src="./img/photo-fair-mobile@1x.jpg" srcset="./img/photo-fair-mobile@2x.jpg 2x" sizes="(min-width: 660px) 300 : 280" height="auto" alt="photo">
+              <img class="" src="./img/photo-fair-mobile@1x.jpg" srcset="./img/photo-fair-mobile@2x.jpg 2x" alt="photo">
             </picture>
           </a>
           <article class="gallery__info">
             <h4 class="gallery__author">Сергей <span class="gallery__time">(25 часов назад)</span></h4>
             <p class="gallery__text">Самая кубанская в мире!</p>
             <p class="gallery__like">
-              <svg class="gallery__heart" width="12.545px" height="11.99px">
+              <svg class="gallery__heart" width="13" height="12">
                 <use xlink:href="./img/sprite.svg#icon-heart"></use>
               </svg>
               <span class="gallery__counter">Нравится: 4</span>
@@ -171,14 +174,14 @@
               <source type="image/webp" srcset="./img/photo-pov-mobile@1x.webp 1x, ./img/photo-pov-mobile@2x.webp 2x">
               <source media="(min-width: 960px)" srcset="./img/photo-pov-desktop@1x.jpg 1x, ./img/photo-pov-desktop@2x.jpg 2x">
               <source media="(min-width: 660px)" srcset="./img/photo-pov-tablet@1x.jpg 1x, ./img/photo-pov-tablet@2x.jpg 2x">
-              <img class="" src="./img/photo-pov-mobile@1x.jpg" srcset="./img/photo-pov-mobile@2x.jpg 2x" sizes="(min-width: 660px) 300 : 280" height="auto" alt="photo">
+              <img class="" src="./img/photo-pov-mobile@1x.jpg" srcset="./img/photo-pov-mobile@2x.jpg 2x" alt="photo">
             </picture>
           </a>
           <article class="gallery__info">
             <h4 class="gallery__author">Максим <span class="gallery__time">(40 часов назад)</span></h4>
             <p class="gallery__text">Где снег-то?</p>
             <p class="gallery__like">
-              <svg class="gallery__heart" width="12.545px" height="11.99px">
+              <svg class="gallery__heart" width="13" height="12">
                 <use xlink:href="./img/sprite.svg#icon-heart"></use>
               </svg>
               <span class="gallery__counter">Нравится: 150</span>
@@ -193,14 +196,14 @@
               <source type="image/webp" srcset="./img/photo-wing-mobile@1x.webp 1x, ./img/photo-wing-mobile@2x.webp 2x">
               <source media="(min-width: 960px)" srcset="./img/photo-wing-desktop@1x.jpg 1x, ./img/photo-win-desktop@2x.jpg 2x">
               <source media="(min-width: 660px)" srcset="./img/photo-wing-tablet@1x.jpg 1x, ./img/photo-wing-tablet@2x.jpg 2x">
-              <img class="" src="./img/photo-wing-mobile@1x.jpg" srcset="./img/photo-wing-mobile@2x.jpg 2x" sizes="(min-width: 660px) 300 : 280" height="auto" alt="photo">
+              <img class="" src="./img/photo-wing-mobile@1x.jpg" srcset="./img/photo-wing-mobile@2x.jpg 2x" alt="photo">
             </picture>
           </a>
           <article class="gallery__info">
             <h4 class="gallery__author">Надежда <span class="gallery__time">(45 часов назад)</span></h4>
             <p class="gallery__text">Всем GM и взаимные лайки!</p>
             <p class="gallery__like">
-              <svg class="gallery__heart" width="12.545px" height="11.99px">
+              <svg class="gallery__heart" width="13" height="12">
                 <use xlink:href="./img/sprite.svg#icon-heart"></use>
               </svg>
               <span class="gallery__counter">Нравится: 2560</span>
@@ -218,42 +221,42 @@
               <source type="image/webp" srcset="./img/photo-road-mobile@1x.webp 1x, ./img/photo-road-mobile@2x.webp 2x">
               <source media="(min-width: 960px)" srcset="./img/photo-road-desktop@1x.jpg 1x, ./img/photo-road-desktop@2x.jpg 2x">
               <source media="(min-width: 660px)" srcset="./img/photo-road-tablet@1x.jpg 1x, ./img/photo-road-tablet@2x.jpg 2x">
-              <img class="" src="./img/photo-road-mobile@1x.jpg" srcset="./img/photo-road-mobile@2x.jpg 2x" sizes="(min-width: 660px) 300 : 280" height="auto" alt="mobile-photo">
+              <img class="" src="./img/photo-road-mobile@1x.jpg" srcset="./img/photo-road-mobile@2x.jpg 2x" alt="mobile-photo">
             </picture>
             <div class="upload__tools">
               <div class="upload__effects">
-                <input class="upload__input--1 visually-hidden" type="radio" id="effect-1" name="effect-toggle" checked>
-                <input class="upload__input--2 visually-hidden" type="radio" id="effect-2" name="effect-toggle">
-                <input class="upload__input--3 visually-hidden" type="radio" id="effect-3" name="effect-toggle">
+                <input class="upload__input upload__input--1 visually-hidden" type="radio" id="effect-1" name="effect-toggle" checked>
+                <input class="upload__input upload__input--2 visually-hidden" type="radio" id="effect-2" name="effect-toggle">
+                <input class="upload__input upload__input--3 visually-hidden" type="radio" id="effect-3" name="effect-toggle">
                 <label for="effect-1" class="upload__effect upload__effect--crop">
-                  <svg width="48px" height="48px">
+                  <svg width="48" height="48" viewBox="0 0 48 48">
                     <use xlink:href="./img/sprite.svg#icon-editor-crop"></use>
                   </svg>
-                  <div class="upload__bar upload__bar--crop">
-                    <div class="upload__scale"></div>
-                    <div class="upload__slider"></div>
-                  </div>
                 </label>
+                <div class="upload__bar upload__bar--crop">
+                  <div class="upload__scale"></div>
+                  <div class="upload__slider"></div>
+                </div>
                 <label for="effect-2" class="upload__effect upload__effect--fill">
-                  <svg width="48px" height="48px">
+                  <svg width="48" height="48" viewBox="0 0 48 48">
                     <use xlink:href="./img/sprite.svg#icon-editor-fill"></use>
                   </svg>
-                  <div class="upload__bar upload__bar--fill">
-                    <div class="upload__scale"></div>
-                    <div class="upload__slider"></div>
-                  </div>
                 </label>
+                <div class="upload__bar upload__bar--fill">
+                  <div class="upload__scale"></div>
+                  <div class="upload__slider"></div>
+                </div>
                 <label for="effect-3" class="upload__effect upload__effect--contrast">
-                  <svg width="31.92px" height="31.92px">
+                  <svg width="32" height="32">
                     <use xlink:href="./img/sprite.svg#icon-editor-contrast"></use>
                   </svg>
-                  <div class="upload__bar upload__bar--contrast">
-                    <div class="upload__scale"></div>
-                    <div class="upload__slider"></div>
-                  </div>
                 </label>
+                <div class="upload__bar upload__bar--contrast">
+                  <div class="upload__scale"></div>
+                  <div class="upload__slider"></div>
+                </div>
               </div>
-              <div class="upload__button--wrapper">
+              <div class="upload__buttons">
                 <button class="upload__button upload__button--submit" type="submit">Запостить</button>
                 <button class="upload__button upload__button--reset" type="reset">Отмена</button>
               </div>
@@ -262,43 +265,45 @@
         </div>
       </section>
     </main>
-    <footer class="inner-footer">
-      <svg class="inner-footer__logo not-desktop" width="146.3px" height="40.375px">
-        <use xlink:href="./img/sprite.svg#logo-pink-blue-mobile"></use>
-      </svg>
-      <svg class="inner-footer__logo desktop" width="146.3px" height="40.375px">
-        <use xlink:href="./img/sprite.svg#logo-pink-blue-desktop"></use>
-      </svg>
-      <ul class="footer__socials">
-        <li>
-          <a class="footer__social twitter" href="#">
-            <svg width="17.5px" height="14.663px">
+    <footer class="pink__footer">
+      <a href="index.html">
+        <svg class="logo-footer not-desktop" width="146" height="40">
+          <use xlink:href="./img/sprite.svg#logo-pink-blue-mobile"></use>
+        </svg>
+        <svg class="logo-footer desktop" width="146" height="40">
+          <use xlink:href="./img/sprite.svg#logo-pink-blue-desktop"></use>
+        </svg>
+      </a>
+      <ul class="socials">
+        <li class="socials__item">
+          <a class="socials__link socials__link--twitter" href="#">
+            <svg width="18" height="15">
               <use xlink:href="./img/sprite.svg#icon-twitter"></use>
             </svg>
             Twitter
           </a>
         </li>
-        <li>
-          <a class="footer__social facebook" href="#">
-            <svg width="8.673px" height="18.944px">
+        <li class="socials__item">
+          <a class="socials__link socials__link--facebook" href="#">
+            <svg width="9" height="19">
               <use xlink:href="./img/sprite.svg#icon-facebook"></use>
             </svg>
             Facebook
           </a>
         </li>
-        <li>
-          <a class="footer__social youtube" href="#">
-            <svg width="14.64px" height="13.96px">
+        <li class="socials__item">
+          <a class="socials__link socials__link--youtube" href="#">
+            <svg width="15" height="14">
               <use xlink:href="./img/sprite.svg#icon-youtube"></use>
             </svg>
             Youtube
           </a>
         </li>
       </ul>
-      <div class="footer__credits">
-        <p>Разработано
-          <a class="footer__credits-link" href="https://htmlacademy.ru/intensive/adaptive">
-            <svg width="26.943px" height="34.09px">
+      <div class="developed">
+        <p class="developed__paragraph">Разработано
+          <a class="developed__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <svg width="27" height="34">
               <use xlink:href="./img/sprite.svg#logo-htmlacademy"></use>
             </svg>
             HTML Academy
@@ -306,8 +311,8 @@
         </p>
       </div>
     </footer>
-    <script type="text/javascript" src="js/common.min.js"></script>
+    <script src="js/common.min.js"></script>
     <script src="js/picturefill.min.js"></script>
-    <script type="text/javascript" src="js/svgxuse.min.js"></script>
+    <script src="js/svgxuse.min.js"></script>
   </body>
 </html>

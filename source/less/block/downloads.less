@@ -1,4 +1,4 @@
-.page-header__download-links {
+.downloads {
   position: absolute;
   margin: 0 auto;
   bottom: -269px;
@@ -11,7 +11,7 @@
 }
 
 @media (min-width: @tablet-width) {
-  .page-header__download-links {
+  .downloads {
     position: static;
     width: 320px;
     min-height: 352px;
@@ -22,14 +22,14 @@
 }
 
 @media (min-width: @desktop-width) {
-  .page-header__download-links {
+  .downloads {
     margin-top: 50px;
     min-height: 405px;
     margin-left: 0;
   }
 }
 
-.page-header__download {
+.downloads__link {
   box-sizing: border-box;
   display: block;
   width: 280px;
@@ -59,16 +59,16 @@
 }
 
 @media (min-width: @tablet-width) {
-  .page-header__download {
+  .downloads__link {
     width: 300px;
     margin-top: 1px;
     margin-bottom: 30px;
-    margin-left: 9px;
+    margin-left: 11px;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .page-header__download {
+  .downloads__link {
     margin-top: 3px;
     margin-bottom: 52px;
     margin-left: 0;
@@ -77,7 +77,7 @@
   }
 }
 
-.page-header__download-stores {
+.downloads__items {
   margin: 0 auto;
   margin-top: 14px;
   padding: 0;
@@ -86,80 +86,80 @@
 }
 
 @media (min-width: @tablet-width) {
-  .page-header__download-stores {
+  .downloads__items {
     margin-left: 30px;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .page-header__download-stores {
+  .downloads__items {
     margin-left: 40px;
   }
 }
 
-.page-header__download-store {
+.downloads__item {
   list-style: none;
 }
 
 @media (min-width: @tablet-width) {
-  .app-store {
+  .downloads__item--apple {
     margin-top: 1px;
-    margin-left: 26px;
+    margin-left: 27px;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .app-store {
+  .downloads__item--apple {
     margin-top: 0;
     margin-left: 8px;
   }
 }
 
-.play-store {
+.downloads__item--android {
   margin-top: 8px;
   margin-left: 35px;
 }
 
 @media (min-width: @tablet-width) {
-  .play-store {
+  .downloads__item--android {
     margin-left: 37px;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .play-store {
+  .downloads__item--android {
     margin-left: 34px;
   }
 }
 
-.windows-store {
+.downloads__item--microsoft {
   margin-top: 12px;
   margin-left: 38px;
 }
 
 @media (min-width: @tablet-width) {
-  .windows-store {
+  .downloads__item--microsoft {
     margin-top: 14px;
     margin-left: 36px;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .windows-store {
+  .downloads__item--microsoft {
     margin-top: 11px;
     margin-left: 38px;
   }
 }
 
-.store-link {
+.downloads__store {
   font-size: 0;
 }
 
-.page-header__app-store {
+.downloads__store--apple {
   background-image: url("../img/logo-apple.svg");
 }
 
-.page-header__download-links p {
+.downloads__paragraph {
   margin: 0 auto;
   margin-top: 16px;
   padding-left: 2px;
@@ -171,16 +171,16 @@
 }
 
 @media (min-width: @tablet-width) {
-  .page-header__download-links p {
+  .downloads__paragraph {
     margin-top: 31px;
     font-size: 18px;
     width: 300px;
-    margin-left: 7px;
+    margin-left: 9px;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .page-header__download-links p {
+  .downloads__paragraph {
     margin-top: 50px;
     padding-left: 0;
     font-size: 18px;

@@ -1,0 +1,121 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 320px;
+  min-height: 170px;
+}
+
+@media (min-width: @tablet-width) {
+  .content {
+    margin: 0 auto;
+    width: 660px;
+    min-height: 330px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .content {
+    margin: 0 auto;
+    width: 940px;
+    min-height: 285px;
+  }
+}
+
+.content-index {
+  background-image: url("../img/iphone-hand-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position: left bottom;
+
+  @media (min-resolution: @retina-dppx) {
+    background-image: url("../img/iphone-hand-mobile@2x.png");
+    background-size: 258px auto;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .content-index {
+    width: 660px;
+    background-image: url("../img/iphone-hand-tablet@1x.png");
+    background-repeat: no-repeat;
+    background-position: left -20px bottom;
+
+    @media (min-resolution: @retina-dppx) {
+      background-image: url("../img/iphone-hand-tablet@2x.png");
+      background-size: 700px auto;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .content-index {
+    width: 940px;
+    background-image: url("../img/iphone-hand-desktop@1x.png");
+    background-repeat: no-repeat;
+    background-position: left 16px bottom;
+
+    @media (min-resolution: @retina-dppx) {
+      background-image: url("../img/iphone-hand-desktop@2x.png");
+      background-size: 1050px auto;
+    }
+  }
+}
+
+.content__title {
+  .light();
+  color: #ffffff;
+  text-align: center;
+  margin: 0 auto;
+  box-sizing: border-box;
+  min-height: 100px;
+  padding-top: 28px;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+@media (min-width: @tablet-width) {
+  .content__title {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: 50px;
+    line-height: 60px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .content__title {
+    margin-top: 35px;
+    margin-bottom: 100px;
+  }
+}
+
+.content__title--index {
+  .light();
+  min-height: 395px;
+  padding-top: 21px;
+  line-height: 30px;
+}
+
+@media (min-width: @tablet-width) {
+  .content__title--index {
+    margin-top: 71px;
+    margin-left: 70px;
+    margin-bottom: 0;
+    max-width: 200px;
+    min-height: 100px;
+    font-size: 40px;
+    line-height: 48px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .content__title--index {
+    margin: 0 auto;
+    margin-top: 87px;
+    margin-left: 25px;
+    max-width: 250px;
+    min-height: 200px;
+    font-size: 50px;
+    line-height: 60px;
+  }
+}

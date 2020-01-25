@@ -1,31 +1,28 @@
-.footer__socials {
+.socials {
   display: flex;
   margin: 0 auto;
   margin-bottom: 24px;
   padding-left: 0;
+  width: 190px;
 
-  li {
-    display: flex;
-  }
-}
-
-@media (min-width: @tablet-width) {
-  .footer__socials {
+  @media (min-width: @tablet-width) {
     margin: 0;
     margin-top: 32px;
     margin-left: 71px;
   }
-}
 
-@media (min-width: @desktop-width) {
-  .footer__socials {
+  @media (min-width: @desktop-width) {
     margin: 0;
     margin-top: 51px;
     margin-left: 235px;
   }
 }
 
-.footer__social {
+.socials__item {
+  display: flex;
+}
+
+.socials__link {
   box-sizing: border-box;
   margin: 6px;
   width: 50px;
@@ -52,17 +49,17 @@
   }
 }
 
-.twitter {
+.socials__link--twitter {
   padding-top: 15px;
   padding-left: 12px;
 }
 
-.facebook {
+.socials__link--facebook {
   padding-top: 11px;
   padding-left: 17px;
 }
 
-.youtube {
+.socials__link--youtube {
   padding-top: 14px;
   padding-left: 17px;
 }
