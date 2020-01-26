@@ -154,11 +154,11 @@
       </form>
     </main>
     <footer class="pink__footer">
-      <a href="index.html">
-        <svg class="logo-footer not-desktop" width="146" height="40">
+      <a class="logo-footer" href="index.html">
+        <svg class="logo-footer__svg not-desktop" width="146" height="40">
           <use xlink:href="./img/sprite.svg#logo-pink-blue-mobile"></use>
         </svg>
-        <svg class="logo-footer desktop" width="146" height="40">
+        <svg class="logo-footer__svg desktop" width="146" height="40">
           <use xlink:href="./img/sprite.svg#logo-pink-blue-desktop"></use>
         </svg>
       </a>
@@ -199,18 +199,22 @@
         </p>
       </div>
     </footer>
-    <section class="pop-up pop-up-ok" hidden>
-      <h2 class="pop-up__title">Ваша заявка отправлена</h2>
-      <p class="pop-up__paragraph">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и<br class="mobile"><span></span> оповестим вас.</p>
-      <div class="pop-up__wrapper pop-up__wrapper--ok">
-        <button class="pop-up__button" type="button" aria-label="Закрыть">Закрыть окно</button>
+    <section class="pop-up pop-up-ok">
+      <div class="pop-up__flex">
+        <h2 class="pop-up__title">Ваша заявка отправлена</h2>
+        <p class="pop-up__paragraph">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
+        <div class="pop-up__wrapper pop-up__wrapper--ok">
+          <button class="pop-up__button" type="button" aria-label="Закрыть">Закрыть окно</button>
+        </div>
       </div>
     </section>
-    <section class="pop-up pop-up-failure" hidden>
-      <h2 class="pop-up__title">Что-то пошло не так!</h2>
-      <p class="pop-up__paragraph">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-      <div class="pop-up__wrapper pop-up__wrapper--failure">
-        <button class="pop-up__button pop-up__button--ok" type="button" aria-label="Закрыть">ОК</button>
+    <section class="pop-up pop-up-failure">
+      <div class="pop-up__flex">
+        <h2 class="pop-up__title">Что-то пошло не так!</h2>
+        <p class="pop-up__paragraph">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+        <div class="pop-up__wrapper pop-up__wrapper--failure">
+          <button class="pop-up__button pop-up__button--ok" type="button" aria-label="Закрыть">ОК</button>
+        </div>
       </div>
     </section>
     <script src="js/common.min.js"></script>

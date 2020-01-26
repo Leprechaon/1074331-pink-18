@@ -13,8 +13,8 @@
 
 .main-nav__toggles {
   position: absolute;
-  top: 0;
-  right: -20px;
+  top: 22px;
+  right: 20px;
   font-size: 0;
   background-color: transparent;
   border: none;
@@ -31,6 +31,10 @@
     fill: #ffffff;
     fill-opacity: 0.3;
   }
+
+  @media (min-width: @tablet-width) {
+    top: 44px;
+  }
 }
 
 
@@ -43,28 +47,27 @@
 .main-nav__cross {
   position: absolute;
   display: none;
-  right: 39px;
-  top: 20px;
+  right: -1px;
+  top: -2px;
 }
 
 @media (min-width: @tablet-width) {
   .main-nav__cross {
-    right: 39px;
-    top: 44px;
+    top: 0;
   }
 }
 
 .main-nav__burger {
   position: absolute;
   display: none;
-  right: 40px;
-  top: 22px;
+  right: 0;
+  top: 0;
 }
 
 @media (min-width: @tablet-width) {
   .main-nav__burger {
-    right: 41px;
-    top: 44px;
+    right: 1px;
+    top: 0;
   }
 }
 
